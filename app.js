@@ -103,6 +103,11 @@ res.redirect("/"+listName);
 
 });
 
+app.post("/textList",function(req,res){
+const textList = req.body.textList
+res.redirect("/"+textList);
+})
+
 app.post("/delete",function(req,res){
   const checkedID = req.body.checkbox;
   const listName = req.body.listName;

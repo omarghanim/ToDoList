@@ -7,6 +7,11 @@
 </div>
 
 <div class="box">
+  <form class="item textList" action="/textList" method="post">
+
+  <input type="text" name="textList" placeholder="Add New List" autocomplete="off">
+  <button type="submit" name="button">+</button>
+  </form>
 
 
 <%  item.forEach(function(item){ %>
@@ -26,10 +31,8 @@
   <input type="text" name="text" placeholder="New Item" autocomplete="off">
   <button type="submit" name="list" value="<%= listTitle %>"> + </button>
 </form>
-   <a href="/work"> Add List </a>
 
 </div>
-
 
 
    <%- include("footer") -%>
